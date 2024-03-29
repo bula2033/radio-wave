@@ -1145,29 +1145,18 @@
     line-height: 16px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .form__textarea {
+    padding: 15px 10px 10px 24px;
+    margin-bottom: 31px;
     min-width: 256px;
+    border-radius: 19px;
+    font-size: 16px;
   }
 
   .about__inputs {
@@ -1177,73 +1166,17 @@
   }
 
   .form__name {
-    min-width: 256px;
-  }
-
-  .form__email {
-    min-width: 256px;
-  }
-
-  .form__btn {
-    font-size: 16px;
-  }
-
-  .footer {
-    padding-top: 54px;
-  }
-
-  .footer__middle {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .footer__nav {
-    flex-basis: 322px;
-  }
-
-  .footer__item {
-    flex-basis: 40%;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .form {
-    align-items: flex-start;
-  }
-
-  .form__textarea {
-    padding: 15px 10px 10px 24px;
-    margin-bottom: 31px;
-    border-radius: 19px;
-    font-size: 16px;
-  }
-
-  .form__name {
     padding: 10px 10px 10px 23px;
     margin-bottom: 33px;
     font-size: 16px;
     min-height: 47px;
+    min-width: 256px;
   }
 
   .form__email {
     padding: 10px 10px 10px 23px;
     font-size: 16px;
+    min-width: 256px;
     min-height: 47px;
   }
 
@@ -1257,6 +1190,14 @@
     font-size: 9px;
   }
 
+  .form__btn {
+    font-size: 16px;
+  }
+
+  .footer {
+    padding-top: 54px;
+  }
+
   .footer__container {
     padding: 0;
   }
@@ -1268,6 +1209,7 @@
   .footer__middle {
     justify-content: center;
     padding-top: 26px;
+    width: 100%;
     background-color: var(--black-color);
   }
 
@@ -1282,6 +1224,7 @@
   }
 
   .footer__item {
+    flex-basis: 40%;
     font-size: 12px;
   }
 
