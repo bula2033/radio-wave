@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Радио W-Wave</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="icon" href="img/favicon.png" type="image/png">
@@ -20,19 +21,19 @@
       <nav class="header__nav flex">
         <ul class="header__list list-reset flex">
           <li class="header__item">
-            <a href="#Подкасты" class="header__link">Подкасты</a>
+            <a href="#Podcasts" class="header__link">Подкасты</a>
           </li>
           <li class="header__item">
-            <a href="#Передачи" class="header__link">Передачи</a>
+            <a href="#Broadcast" class="header__link">Передачи</a>
           </li>
           <li class="header__item">
-            <a href="#Гости" class="header__link">Гости</a>
+            <a href="#Guests" class="header__link">Гости</a>
           </li>
           <li class="header__item">
-            <a href="#Плейлисты" class="header__link">Плейлисты</a>
+            <a href="#Playlists" class="header__link">Плейлисты</a>
           </li>
           <li class="header__item">
-            <a href="Онас" class="header__link">О&nbsp;нас</a>
+            <a href="About&nbsp;us" class="header__link">О&nbsp;нас</a>
           </li>
         </ul>
       </nav>
@@ -62,7 +63,7 @@
         </div>
       </div>
     </section>
-    <section id="Подкасты" class="podcasts">
+    <section id="Podcasts" class="podcasts">
       <div class="container podcasts__container">
         <h2 class="podcasts__title title-reset">Подкасты</h2>
         <ul class="podcasts__list list-reset flex">
@@ -165,11 +166,127 @@
         </ul>
       </div>
     </section>
-    <section id="Передачи" class="broadcast">
-      <div class="container broadcast__container flex">
-        <div class="broadcast__left flex">
+    <section id="Broadcast" class="broadcast">
+      <div class="container broadcast__container">
+        <div class="broadcast__row grid">
           <h2 class="broadcast__title title-reset">Передачи</h2>
-          <div class="broadcast__wrapper flex">
+          <ul class="broadcast__list broadcast__right list-reset grid">
+            <li class="broadcast__item">
+              <article class="broadcast__preview">
+                <picture class="broadcast__image">
+                  <source media="(max-width: 576px)" srcset="img/programm_320_1.png">
+                  <img src="img/program_1.png" alt="" class="broadcast__pic" aria-hidden="true">
+                </picture>
+                <div class="broadcast__text">
+                  <h3 class="broadcast__subtitle subtitle-reset">О&nbsp;людях и&nbsp;книгах</h3>
+                  <span class="broadcast__descr descr-reset">Анонсируется отдельно</span>
+                  <a href="#" class="broadcast__detail">Подробнее
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="12" viewBox="0 0 28 12" fill="none">
+                      <path
+                        d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                        fill="#121723" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="broadcast__item">
+              <article class="broadcast__preview">
+                <picture class="broadcast__image">
+                  <source media="(max-width: 576px)" srcset="img/programm_320_2.png">
+                  <img src="img/program_2.png" alt="" class="broadcast__pic" aria-hidden="true">
+                </picture>
+                <div class="broadcast__text">
+                  <h3 class="broadcast__subtitle subtitle-reset">Графомания&nbsp;td</h3>
+                  <span class="broadcast__descr descr-reset">По&nbsp;понедельникам в&nbsp;10:00</span>
+                  <a href="#" class="broadcast__detail">Подробнее
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="12" viewBox="0 0 28 12" fill="none">
+                      <path
+                        d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                        fill="#121723" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="broadcast__item">
+              <article class="broadcast__preview">
+                <picture class="broadcast__image">
+                  <source media="(max-width: 576px)" srcset="img/programm_320_3.png">
+                  <img src="img/program_3.png" alt="" class="broadcast__pic" aria-hidden="true">
+                </picture>
+                <div class="broadcast__text">
+                  <h3 class="broadcast__subtitle subtitle-reset">Не&nbsp;Рим,&nbsp;не&nbsp;Троя</h3>
+                  <span class="broadcast__descr descr-reset">По&nbsp;вторникам в&nbsp;12:00</span>
+                  <a href="#" class="broadcast__detail">Подробнее
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="12" viewBox="0 0 28 12" fill="none">
+                      <path
+                        d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                        fill="#121723" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="broadcast__item">
+              <article class="broadcast__preview">
+                <picture class="broadcast__image">
+                  <source media="(max-width: 576px)" srcset="img/programm_320_4.png">
+                  <img src="img/program_4.png" alt="" class="broadcast__pic" aria-hidden="true">
+                </picture>
+                <div class="broadcast__text">
+                  <h3 class="broadcast__subtitle subtitle-reset">Эрудит</h3>
+                  <span class="broadcast__descr descr-reset">По&nbsp;пятницам в&nbsp;17:00</span>
+                  <a href="#" class="broadcast__detail">Подробнее
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="12" viewBox="0 0 28 12" fill="none">
+                      <path
+                        d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                        fill="#121723" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="broadcast__item">
+              <article class="broadcast__preview">
+                <picture class="broadcast__image">
+                  <source media="(max-width: 576px)" srcset="img/programm_320_5.png">
+                  <img src="img/program_5.png" alt="" class="broadcast__pic" aria-hidden="true">
+                </picture>
+                <div class="broadcast__text">
+                  <h3 class="broadcast__subtitle subtitle-reset">Тонкости эпох</h3>
+                  <span class="broadcast__descr descr-reset">По&nbsp;субботам в&nbsp;10:00</span>
+                  <a href="#" class="broadcast__detail">Подробнее
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="12" viewBox="0 0 28 12" fill="none">
+                      <path
+                        d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                        fill="#121723" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="broadcast__item">
+              <article class="broadcast__preview">
+                <picture class="broadcast__image">
+                  <source media="(max-width: 576px)" srcset="img/programm_320_6.png">
+                  <img src="img/program_6.png" alt="" class="broadcast__pic" aria-hidden="true">
+                </picture>
+                <div class="broadcast__text">
+                  <h3 class="broadcast__subtitle subtitle-reset">Живые мысли</h3>
+                  <span class="broadcast__descr descr-reset">По&nbsp;воскресеньям в&nbsp;15:30</span>
+                  <a href="#" class="broadcast__detail">Подробнее
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="12" viewBox="0 0 28 12" fill="none">
+                      <path
+                        d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                        fill="#121723" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="broadcast__wrapper">
             <picture class="broadcast__picture">
               <source media="(max-width: 576px)" srcset="img/mic_320.png">
               <source media="(max-width: 1023px)" srcset="img/mic_768.png">
@@ -183,125 +300,9 @@
             </div>
           </div>
         </div>
-        <ul class="broadcast__list broadcast__right list-reset flex">
-          <li class="broadcast__item">
-            <article class="broadcast__preview">
-              <picture class="broadcast__image">
-                <source media="(max-width: 576px)" srcset="img/programm_320_1.png">
-                <img src="img/program_1.png" alt="" class="broadcast__pic" aria-hidden="true">
-              </picture>
-              <div class="broadcast__text">
-                <h3 class="broadcast__subtitle subtitle-reset">О&nbsp;людях и&nbsp;книгах</h3>
-                <span class="broadcast__descr descr-reset">Анонсируется отдельно</span>
-                <a href="#" class="broadcast__detail">Подробнее
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="12" viewBox="0 0 28 12" fill="none">
-                    <path
-                      d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
-                      fill="#121723" />
-                  </svg>
-                </a>
-              </div>
-            </article>
-          </li>
-          <li class="broadcast__item">
-            <article class="broadcast__preview">
-              <picture class="broadcast__image">
-                <source media="(max-width: 576px)" srcset="img/programm_320_2.png">
-                <img src="img/program_2.png" alt="" class="broadcast__pic" aria-hidden="true">
-              </picture>
-              <div class="broadcast__text">
-                <h3 class="broadcast__subtitle subtitle-reset">Графомания&nbsp;td</h3>
-                <span class="broadcast__descr descr-reset">По&nbsp;понедельникам в&nbsp;10:00</span>
-                <a href="#" class="broadcast__detail">Подробнее
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="12" viewBox="0 0 28 12" fill="none">
-                    <path
-                      d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
-                      fill="#121723" />
-                  </svg>
-                </a>
-              </div>
-            </article>
-          </li>
-          <li class="broadcast__item">
-            <article class="broadcast__preview">
-              <picture class="broadcast__image">
-                <source media="(max-width: 576px)" srcset="img/programm_320_3.png">
-                <img src="img/program_3.png" alt="" class="broadcast__pic" aria-hidden="true">
-              </picture>
-              <div class="broadcast__text">
-                <h3 class="broadcast__subtitle subtitle-reset">Не&nbsp;Рим,&nbsp;не&nbsp;Троя</h3>
-                <span class="broadcast__descr descr-reset">По&nbsp;вторникам в&nbsp;12:00</span>
-                <a href="#" class="broadcast__detail">Подробнее
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="12" viewBox="0 0 28 12" fill="none">
-                    <path
-                      d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
-                      fill="#121723" />
-                  </svg>
-                </a>
-              </div>
-            </article>
-          </li>
-          <li class="broadcast__item">
-            <article class="broadcast__preview">
-              <picture class="broadcast__image">
-                <source media="(max-width: 576px)" srcset="img/programm_320_4.png">
-                <img src="img/program_4.png" alt="" class="broadcast__pic" aria-hidden="true">
-              </picture>
-              <div class="broadcast__text">
-                <h3 class="broadcast__subtitle subtitle-reset">Эрудит</h3>
-                <span class="broadcast__descr descr-reset">По&nbsp;пятницам в&nbsp;17:00</span>
-                <a href="#" class="broadcast__detail">Подробнее
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="12" viewBox="0 0 28 12" fill="none">
-                    <path
-                      d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
-                      fill="#121723" />
-                  </svg>
-                </a>
-              </div>
-            </article>
-          </li>
-          <li class="broadcast__item">
-            <article class="broadcast__preview">
-              <picture class="broadcast__image">
-                <source media="(max-width: 576px)" srcset="img/programm_320_5.png">
-                <img src="img/program_5.png" alt="" class="broadcast__pic" aria-hidden="true">
-              </picture>
-              <div class="broadcast__text">
-                <h3 class="broadcast__subtitle subtitle-reset">Тонкости эпох</h3>
-                <span class="broadcast__descr descr-reset">По&nbsp;субботам в&nbsp;10:00</span>
-                <a href="#" class="broadcast__detail">Подробнее
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="12" viewBox="0 0 28 12" fill="none">
-                    <path
-                      d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
-                      fill="#121723" />
-                  </svg>
-                </a>
-              </div>
-            </article>
-          </li>
-          <li class="broadcast__item">
-            <article class="broadcast__preview">
-              <picture class="broadcast__image">
-                <source media="(max-width: 576px)" srcset="img/programm_320_6.png">
-                <img src="img/program_6.png" alt="" class="broadcast__pic" aria-hidden="true">
-              </picture>
-              <div class="broadcast__text">
-                <h3 class="broadcast__subtitle subtitle-reset">Живые мысли</h3>
-                <span class="broadcast__descr descr-reset">По&nbsp;воскресеньям в&nbsp;15:30</span>
-                <a href="#" class="broadcast__detail">Подробнее
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="12" viewBox="0 0 28 12" fill="none">
-                    <path
-                      d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
-                      fill="#121723" />
-                  </svg>
-                </a>
-              </div>
-            </article>
-          </li>
-        </ul>
       </div>
     </section>
-    <section id="Гости" class="guests">
+    <section id="Guests" class="guests">
       <div class="container guests__container flex">
         <h2 class="guests__title title-reset">Гости</h2>
         <span class="guests__subtitle subtitle-reset">У&nbsp;нас бывают:</span>
@@ -360,7 +361,7 @@
         </ul>
       </div>
     </section>
-    <section id="Плейлисты" class="playlists">
+    <section id="Playlists" class="playlists">
       <div class="container playlists__container flex">
         <div class="playlists__left">
           <h2 class="playlists__title title-reset">Плейлисты</h2>
@@ -575,7 +576,7 @@
         </div>
       </div>
     </section>
-    <section id="О&nbsp;нас" class="about">
+    <section id="About&nbsp;us" class="about">
       <div class="container about__container">
         <div class="about__wrapper">
           <h2 class="about__title title-reset">О&nbsp;нас</h2>
@@ -682,7 +683,7 @@
           </a>
           <ul class="footer__wrapper list-reset flex">
             <li class="footer__social">
-              <a href="#" target="_blank" class="footer__youtube" aria-label="ютуб">
+              <a href="#" target="_blank" class="footer__youtube" aria-label="наш видео-блог в ютубе">
                 <svg xmlns="http://www.w3.org/2000/svg" class="footer__svg" width="24" height="24" viewBox="0 0 24 24"
                   fill="none">
                   <g clip-path="url(#clip0_24531_5372)">
@@ -699,7 +700,7 @@
               </a>
             </li>
             <li class="footer__social">
-              <a href="#" target="_blank" class="footer__ok" aria-label="одноклассники">
+              <a href="#" target="_blank" class="footer__ok" aria-label="наш видео-блог в одноклассниках">
                 <svg xmlns="http://www.w3.org/2000/svg" class="footer__svg" width="24" height="24" viewBox="0 0 24 24"
                   fill="none">
                   <g clip-path="url(#clip0_24531_5373)">
@@ -719,7 +720,7 @@
               </a>
             </li>
             <li class="footer__social">
-              <a href="#" target="_blank" class="footer__vk" aria-label="в контакте">
+              <a href="#" target="_blank" class="footer__vk" aria-label="наш видео-блог в контакте">
                 <svg xmlns="http://www.w3.org/2000/svg" class="footer__svg" width="24" height="24" viewBox="0 0 24 24"
                   fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd"
